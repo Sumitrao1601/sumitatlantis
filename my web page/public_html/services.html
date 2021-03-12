@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Services</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="home.css">
+            <script src="homejs.js"></script>
+    </head>
+   
+
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="about.html" id="about">About</a>
+  <a href="#" id="blog">Blog</a>
+  <a href="#" id="projects">Projects</a>
+  <a href="contact.html" id="contact">Contact</a>
+</div>
+
+<div style="margin-left:80px;">
+      
+</div>
+
+   
+<ul>
+  <img src="img/atlantis-logo.png">
+  <li><a href="index.html">Login</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Hotel</a>
+    <div class="dropdown-content">
+      <a href="hotel.html">Super Delux</a>
+      <a href="hotel.html">Delux</a>
+      <a href="hotel.html">Ordinary</a>
+    </div>
+  </li>
+  <li><a href="home.html">Home</a></li>
+</ul>
+    
+    
+
+    
+
+
+<div class="parallax">
+    <h3><font color="#ddd">Alert! Covid-19:</font>
+  <a href="" class="typewrite" style="color:;" data-period="2000" data-type='[ "Welcome to Atlantis Resort.🗻", "🧴Sanitize your Hand. ", "😷Wear the Face mask.", "🧍🏻🧍‍♂️Maintain Social Distance." ]'>
+   
+  </a></h3>
+    
+    
+</div>
+     
+        <div class="container">
+            <div class="card">
+                <div class="icon">
+                    <i class="facebook"></i>
+                    </div>
+                <div class ="snapshot"></div></div>
+      
+            <div class="card">
+                <div class="icon">
+                    <i class="instagram"></i>
+                    </div>
+                <div class ="snapshot"></div></div>
+                
+            <div class="card">
+                <div class="icon">
+                    <i class="twitter"></i>
+                    </div>
+                <div class ="snapshot"></div></div>       </div>
+        </body>
+        <style>
+            
+            .container{
+                display:flex;
+                justify-content:center;
+                flex-wrap:wrap;
+            }
+            .card{
+                width:180px; height:180px;
+                perspective: 1500px;
+                position: relative;
+                margin: 25px 50px;
+                cursor: pointer;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+                transition: all 0.3s;
+            }
+            .icon, .snapshot{
+                position: absolute;
+                top: 0; left: 0;
+                width: 100%; height:100%;
+            }
+            .icon{
+                display:flex;
+                justify-content:center; 
+                align-items: center;
+                z-index: 1;
+                transform-origin: left;
+                transition: all 0.3s;
+                font-size: 60px;
+                color: #fff;
+            }
+            .card:first-child .icon{background-color: #3b5998;}
+            
+            .card:nth-child(2) .icon{background-color: #ea4c89;}
+
+            .card:last-child .icon{background-color: #00acee;}
+            
+            .snapshot{background-color: cover;}
+            
+            .card:first-child .snapshot{
+                background-image: url("img/1room.jpg")
+            }
+            .card:nth-child(2) .snapshot{
+                background-image: url("img/2pool.webp");
+                height : 180px;
+                width: 180px;
+            }
+            .card:last-child .snapshot{
+                background-image: url("img/3food.jpg");
+                height : 180px;
+                width: 180px;
+            }
+            .card:hover .icon{transform: rotateY(-120deg);}
+            .container:hover .card{filter: blur(1px);}
+            .container .card:hover{
+                filter: blur(0);
+                transform: translateY(-10px) rotate(-10deg);
+            }
+            
+            
+            
+        </style>  
+
+
+<h3>Services</h3>
+
+
+
+
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="img/navigator.jpg" alt="Mountains" style="width:100px;height:100px;">
+      <h4>Accessible Location</h4>
+<p>Hotels can be like mazes! Make it easy for all guests to find their way around with clear signage and directions. Signs need to be large, contrasting from their background, and in a well-lit place; otherwise all room numbers may look the same.</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="img/alarm.png" alt="Lights" style="width:100px;height:100px;">
+      <h4>Open 24/7</h4>
+	<p>Room service may be provided on a 24/7 hour basis or limited to late night hours only. Due to the cost of customized orders and delivery of room service, prices charged to the patron are typically much higher than in the hotel's restaurant.</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="img/calender.png" alt="Nature" style="width:100px;height:100px;">
+      <h3>Reservation</h3>
+	<p style='padding:10px;'>Online hotel reservations are a popular method for booking hotel rooms. Travellers can book rooms on a computer by using online security to protect their privacy and financial information and by using several online travel agents to compare prices and facilities at different hotels.</p>
+	</div>
+  </div>
+  
+  
+  
+  <div class="column cars">
+    <div class="content">
+    <img src="img/sanitizer.jpg" alt="Car" style="width:100px;height:100px;">
+    	<h3>Sanitized Room</h3>
+	<p>1. Hotels must ensure proper crowd management inside and outside the premises, like at the parking lot. Basic social distancing norms to be strictly followed.</p>
+        <p>2. Thermal screening and sanitiser dispensers must at entrance. Only asymptomatic staff and guests to be allowed to enter the premises.</p>
+        <p>3. No staffers or customers to be allowed without wearing masks/face covers.</p>
+    </div>
+  </div>
+<div class="column cars">
+    <div class="content">
+      <img src="img/friend.jpg" alt="Car" style="width:100px;height:100px;">
+      <h3>Friendly Staff</h3>
+	<p>Superbh service, very friendly, polite and helpful staff. Good advice on tour planning for temples, waterfall and wineries.
+Very clean rooms. Good and friendly room service. We even had a daily newspaper in the room....</p>
+    </div>
+  </div>
+    
+    <div class="column cars">
+    <div class="content">
+    <img src="img/wifi.png" alt="Car" style="width:100px;height:100px;">
+    <h3>Free Wifi</h3>
+    <p>To get the official name of the hotel’s Wi-Fi. Even then, you should still be cautious about using the hotel Wi-Fi, unless you have a VPN to help protect your search history and personal information. Browsing online for restaurants or local tourist attractions should be low-risk activities without a VPN, but avoid logging in to any sensitive online accounts.</p>
+	</div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+</body>
+<footer class="footer">
+    <style>
+h2{ color: #f2f2f2;}
+/* Create three equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */  
+}
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<div>
+<div class="row1">
+  <div class="column1" style="background-color:#aaa;">
+      <h2>Company</h2>
+    <a href=""><p>About us</p></a>
+    <a href=""><p>Hotels</p></a>
+    <a href=""><p>Customer Care</p></a>
+    <a href=""><p>Contact Us</p></a>
+      </div>
+  <div class="column1" style="background-color:#bbb;">
+    <h2>Our Facilities</h2>
+    <a href=""><p>Resturant</p></a>
+    <a href=""><p>Bars</P></a>
+    <a href=""><p>Pick-up</p></a>
+    <a href=""><p>Swimming Pool</p></a>
+    <a href=""><p>Spa</p></a>
+    <a href=""><p>Gym</p></a>
+  </div>
+  <div class="column1" style="background-color:#ccc;">
+    <h2>Subscribe</h2>
+    <p>Sed cursus ut nibh in semper. Mauris varius et magna in fermentum. </p>
+<form action="#" id="form-subscribe">
+<div class="form-field">
+<input type="email" placeholder="Email Address" id="email">
+ <input type="submit" id="submit" value="Send">
+  </div>
+</div>
+	<ul>
+		<li><font color="orange">&copy; 2020 Responsive Hotel Site Template.</font>
+			<a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+		</li>
+	</ul>
+</div>
+</footer>
+</html>
+ 

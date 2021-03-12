@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div></div>
+        <style>
+body {
+  background: url("img/nature.gif");
+  background-position: center;
+                background-size: cover;
+}
+
+/* The device with borders */
+.tablet {
+  position: relative;
+  width: 458px;
+  height: 624px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.tablet:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.tablet:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.tablet .content {
+  width: 458px;
+  height: 624px;
+  background: white;
+  margin: -1px;
+}
+ .awesome{
+    text-transform: uppercase ;
+               
+                margin-left: 15px;
+                margin-right: 10px;
+                margin-bottom:1px;
+                width: 45%;
+                border:0;
+                border-bottom: 2px solid black;
+ }
+ .btn {
+  border: none;
+  padding: 7px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: -14px 12px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #ddd; 
+  color: black; 
+  border: 2px solid blue; 
+}
+
+.btn:hover {
+  background-image:url(img/ironman.gif);
+  color: aqua;
+  background-position: center;
+  background-size:cover; 
+}
+</style>
+</head>
+
+    
+<div class="tablet">
+  <div class="content">
+      <form>
+  <form action="">
+  <img src="img/atlantis-logo.png" height="60"><br>
+  <img src="img/login.jpg" height="160" width="160" style="margin-left: 130px;"><br>
+     
+     <h3 style="margin-left: 40px;color:red;">Login</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <label for="fname">E-mail:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" id="fname" class="awesome" name="fname"><br><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <label for="lname">Password:</label>
+  <input type="password" id="passField" class="awesome" name="pwd" required="password">
+  <input type="button" class="awesome" style="width: 7%;" onclick="toggle()" value="👁️"><br><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="submit" value="Log in" class="btn" style="width: 20%;" formaction="home.html">
+  <div class="email">
+  
+  <a href="#" style="margin-left: 200px;color:darkblue">Forgot password?</a>
+  </div>
+   <h3 style="margin-left: 40px;color:blueviolet;">Register</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <label for="fname">E-mail:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" id="fname" class="awesome" name="fname"><br><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <label for="lname">Password:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="password" class="awesome" id="passField" name="pwd" value="" >
+   <input type="button" class="awesome" style="width: 7%;onclick ="toggle()" value="👁️"><br><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <label for="lname">Re-password:</label>
+  <input type="password" class="awesome" id="passField" name="lname" value="">
+    <input type="button" class="awesome" style="width: 7%;onclick= "toggle()" value="👁️"><br><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="submit" value="Register" class="btn" style="width: 20%;" formaction="#">
+  </div>
+</form>
+          <script>
+              function toggle(){
+                  const passField = document.getElementById("passField")
+    if(passField.type == "password"){
+        passField.type = "text";
+    } else  {       
+        passField.type = "password";
+    }  
+    }
+          </script>
+          
+          
+  </div>
+</div>
+    </body>
+</html>

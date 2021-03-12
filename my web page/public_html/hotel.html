@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    </head>
+    
+    <html>
+    <body>
+        <header>
+            <nav class="navbar">
+                <h1 class="logo"><img src="img/atlantis-logo.png"></h1>
+                <ul class="nav-list">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="hotel.html">Hotel</a></li>
+                    <li><a href="Services.html">Service</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>                    
+                </ul>
+            </nav>
+        </header>
+        
+        
+        
+        
+        <style>
+            *{
+                 margin: 0; padding:0 ;
+            }
+            body{
+                background-image: url("img/hotel1.webp");
+                background-position: center;
+                background-size: cover;
+                    opacity: 1.6;
+                        }
+            header{
+                width:0vx ; height: 20vh;
+                
+                background-position: center;
+                background-size: cover;
+            }
+            .navbar{
+                box-sizing: border-box;
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                padding:30px;
+                font-family:'josefin sans',sans-serif;
+                background-color: rgba(255,255,255,0.6);
+            }
+            .nav-list li a:hover{
+               background-color: blueviolet;
+           
+            }
+            .logo{
+                text-transform:uppercase;
+                color:#565656;
+            }
+            .nav-list{
+                display: flex;
+                list-style: none;
+            }
+            .nav-list li{ margin-left: 40px;}
+            .nav-list li a{
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size:  14px;
+                color:#565656;
+                position: relative;
+            }
+            .nav-list li a::before{
+                content: '';
+                position: absolute;
+                width: 100%; height: 1px;
+                bottom: -5px;
+                background-color: #565656;
+                transform: scale(0);
+                transition: all 0.3s;
+            }
+        </style>
+        
+ 
+    
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1 style='color:#ddd'>Rooms Booking</h1>
+<hr>
+
+<h2 style='color:#e3e3e3'>Features of Hotel</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Delux Room</button>
+  <button class="btn" onclick="filterSelection('cars')"> Ordinary Room</button>
+  <button class="btn" onclick="filterSelection('people')">Super Delux Room</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="img/hotel1.webp" alt="Mountains" style="width:300px;height:300px;">
+      <h4>Delux Room 1</h4>
+      <p>Comfortable with Thai interior design, our Deluxe rooms offer a LCD TV, en suite bathroom and a hair dryer.</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="img/room3.jpg" alt="Lights" style="width:300px;height:300px;">
+      <h4>Delux Room 2</h4>
+      <p>Comfortable with Thai interior design, our Deluxe rooms offer a LCD TV, en suite bathroom and a hair dryer.</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="img/room4.jpg" alt="Nature" style="width:300px;height:300px;">
+      <h4>Delux Room 3</h4>
+      <p>Comfortable with Thai interior design, our Deluxe rooms offer a LCD TV, en suite bathroom and a hair dryer.</p>
+    </div>
+  </div>
+  
+  <div class="column cars">
+    <div class="content">
+      <img src="img/hotel2.jpg" alt="Car" style="width:300px;height:300px;">
+      <h4>Ordinary Room 1</h4>
+      <p>The Atlantis Resort offers you the comforts of a home including a separate living and dining area, LCD TV, minibar and free WiFi. We have limited availability so hurry, book now.</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="img/room1.jpg" alt="Car" style="width:300px;height:300px;">
+      <h4>Ordinary Room 2</h4>
+      <p>The Atlantis Resort offers you the comforts of a home including a separate living and dining area, LCD TV, minibar and free WiFi. We have limited availability so hurry, book now.</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="img/room2.jpg" alt="Car" style="width:300px;height:300px;">
+      <h4>Ordinary Room 3</h4>
+      <p>The Atlantis Resort offers you the comforts of a home including a separate living and dining area, LCD TV, minibar and free WiFi. We have limited availability so hurry, book now.</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="img/hotel3.webp" alt="Car" style="width:300px;height:300px;">
+      <h4>Super Delux Room 1</h4>
+      <p>Relax in the privacy of the Grand Deluxe rooms that have a private balcony with lush garden or city views, a LCD TV, work desk and spacious living area.</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="img/room5.jpg" alt="Car" style="width:300px;height:300px;">
+      <h4>Super Delux Room 2</h4>
+      <p>Relax in the privacy of the Grand Deluxe rooms that have a private balcony with lush garden or city views, a LCD TV, work desk and spacious living area.</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="img/room6.jpg" alt="Car" style="width:300px;height:300px;">
+      <h4>Super Delux Room 3</h4>
+      <p>Relax in the privacy of the Grand Deluxe rooms that have a private balcony with lush garden or city views, a LCD TV, work desk and spacious living area.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btnn {
+  background-color: royalblue;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btnn:hover {
+   
+  background-color:skyblue ;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="row">
+  <div class="col-75">
+      <div class="container"><h2 style="color:skyblue">Responsive Checkout Form</h2><br>
+      <form action="index.html">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Delhi">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="Delhi">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="110059">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Verify for Card Details
+        </label>
+        
+               
+        <div class="button">
+	
+		<div class="tick">
+		</div>
+	
+</div>
+    </body>
+    <style>
+
+
+.button {
+    
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  width: 300px;
+  height: 80px;
+  background: dodgerblue;
+  border-radius: 6px;
+  transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+}
+
+.button svg {
+  transform: rotate(180deg);
+  transition: all .5s;
+}
+
+.button__circle {
+  width: 120px;
+  height: 120px;
+  background: mediumseagreen;
+  border-radius: 50%;
+  transform: rotate(-180deg);
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.tick {
+  color: white;
+  font-size: 2em;
+  transition: all .9s;
+}
+    </style>
+    <script>
+     let button = document.querySelector('.button');
+let buttonText = document.querySelector('.tick');
+
+const tickMark = "<svg width=\"58\" height=\"45\" viewBox=\"0 0 58 45\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"#fff\" fill-rule=\"nonzero\" d=\"M19.11 44.64L.27 25.81l5.66-5.66 13.18 13.18L52.07.38l5.65 5.65\"/></svg>";
+
+buttonText.innerHTML = "Submit";
+
+button.addEventListener('click', function() {
+
+  if (buttonText.innerHTML !== "Submit") {
+    buttonText.innerHTML = "Submit";
+  } else if (buttonText.innerHTML === "Submit") {
+    buttonText.innerHTML = tickMark;
+  }
+  this.classList.toggle('button__circle');
+});   
+</script>
+      
+      
+      
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <p><a href="#">Product 1</a> <span class="price">&#8377;1500</span></p>
+      <p><a href="#">Product 2</a> <span class="price">&#8377;500</span></p>
+      <p><a href="#">Product 3</a> <span class="price">&#8377;800</span></p>
+      <p><a href="#">Product 4</a> <span class="price">&#8377;200</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>&#8377;3000</b></span></p>
+    </div>
+  </div>
+</div>
+    
+    <button onclick="myFunction()">Room Price Detail</button>
+    <style>
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+</style>
+    <div id="myDIV">
+<font color="green" size="16" align=center>Room Detail</font><br>
+
+<table border width="750"bordercolor="blue" bgcolor="cream"> 
+<tr> <td colspan="4" align="center"><font color="blue" size="6">room require</font></td></tr> 
+<tr> <td rowspan="2" width="25%">MakeMyTrip</td><td colspan="2">Air conditioner room</td> <td rowspan="2" width="25%">Wifi Available</td></tr>
+	<tr><td width="25%">Single room</td> <td width="25%">4,999(per day)<tr> <td rowspan="2" width="25%">Trip.com</td><td colspan="2">Air Conditioner room</td> <td rowspan="2" width="25%">Wifi Available</td></tr>
+	<tr><td width="25%">Single room</td> <td width="25%">5,999(per day)
+                
+</td></tr>
+<tr><td width="25%">Hotels.com</td> <td width="25%">5,500(per day)<tr> <td rowspan="2" width="25%">Go Ibibo.com</td><td colspan="2">Air Conditioner room</td> <td rowspan="2" width="25%">Wifi Available</td></tr>
+	<tr><td width="25%">Single room</td> <td width="25%">6,999(per day)
+</td></tr>
+</table>	
+
+
+<form name="example">
+<input type="text" size="30" name="calculator1"style="width: 20%;">
+<input type="button" name="B1" value="calculation" onClick="calci()">
+<input type="reset" name="B2" value="reset">
+Answer:<input type="text" size="20" name="answer" style="width: 20%;">
+</form></div>
+
+<script>
+	function calci()
+	{
+	document.example.answer.value=eval		(document.example.calculator1.value)
+} 
+
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+</html>
