@@ -16,7 +16,6 @@ and open the template in the editor.
     </head>
     <body>  
 
-
 <div id="mySidenav" class="sidenav">
   <a href="about.html" id="about">About</a>
   <a href="#" id="blog">Blog</a>
