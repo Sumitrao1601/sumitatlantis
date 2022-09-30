@@ -14,7 +14,8 @@ and open the template in the editor.
 <link rel="stylesheet" type="text/css"    href="/media/css/dateinput/flight.css"/>
 <link rel="stylesheet" type="text/css"    href="/media/css/dateinput/flight-calendar.css"/>
     </head>
-    <body>  
+
+<body>  
 
 <div id="mySidenav" class="sidenav">
   <a href="about.html" id="about">About</a>
